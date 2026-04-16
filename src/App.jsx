@@ -156,12 +156,15 @@ export default function Dashboard() {
 
               <div className={styles.nowPanel}>
                 <p className={styles.nowLabel}>Now</p>
-                <p className="flex flex-wrap items-center gap-2 sm:gap-3 mt-3 sm:mt-4 text-2xl sm:text-3xl font-bold tracking-tight text-zinc-900">
-                  Mixed <span className="text-[#2563eb]/30">→</span>{" "}
-                  <span className="inline-flex items-center rounded-xl bg-[#2563eb] px-3 sm:px-4 py-1.5 text-[10px] sm:text-xs font-bold uppercase tracking-widest text-white shadow-[0_4px_12px_-2px_rgba(37,99,235,0.3)]">
-                    trending neutral
+                <div className="flex items-center gap-2 sm:gap-4 mt-3 sm:mt-4 leading-none">
+                  <span className="text-3xl sm:text-4xl font-bold tracking-tight text-zinc-900 leading-none">
+                    Mixed
                   </span>
-                </p>
+                  <span className="text-[#2563eb] text-xl sm:text-2xl font-light leading-none -mt-1">→</span>
+                  <span className="inline-flex items-center justify-center rounded-full bg-[#2563eb] px-4 py-3 text-[10px] sm:text-xs font-bold uppercase tracking-[0.15em] text-white shadow-[0_8px_20px_-4px_rgba(37,99,235,0.4)] ring-4 ring-[#2563eb]/10 leading-none">
+                    Trending Neutral
+                  </span>
+                </div>
               </div>
             </div>
 
