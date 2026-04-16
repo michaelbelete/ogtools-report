@@ -291,7 +291,7 @@ export default function Dashboard() {
             </span>
           </div>
           <p className="text-[9px] sm:text-[11px] font-bold uppercase tracking-[0.3em] text-zinc-500">
-            FOODIECLUB GROWTH OPS • Q2 2026
+            FOODIECLUB GROWTH • WEEK 1 REPORT 2026
           </p>
         </footer>
       </div>
