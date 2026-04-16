@@ -175,6 +175,73 @@ export default function Dashboard() {
               </p>
             </div>
           </section>
+
+          {/* Proof Section */}
+          <section className={styles.metricCard + " xl:col-span-3"}>
+            <div className="flex items-center justify-between gap-4 mb-8 sm:mb-10">
+              <h3 className={styles.sectionLabel}>04. Proof</h3>
+              <div className="flex-1 h-px bg-zinc-100/80" />
+            </div>
+
+            <div className="mb-8 space-y-1.5">
+              <p className={styles.nowLabel}>Reddit Thread (r/san_francisco)</p>
+              <h4 className="text-xl sm:text-2xl font-bold tracking-tight text-zinc-900">“Is Foodieclub actually legit?”</h4>
+            </div>
+
+            <div className="overflow-x-auto -mx-6 sm:mx-0">
+              <div className="inline-block min-w-full align-middle px-6 sm:px-0">
+                <table className="min-w-full border-separate border-spacing-y-2">
+                  <thead>
+                    <tr>
+                      <th scope="col" className="px-4 py-3 text-left text-[10px] font-bold text-zinc-400 uppercase tracking-widest">Type</th>
+                      <th scope="col" className="px-4 py-3 text-left text-[10px] font-bold text-zinc-400 uppercase tracking-widest">Content</th>
+                      <th scope="col" className="px-4 py-3 text-left text-[10px] font-bold text-zinc-400 uppercase tracking-widest">Insight</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr className="bg-zinc-50/50 rounded-xl overflow-hidden">
+                      <td className="px-4 py-4 whitespace-nowrap text-xs font-bold text-zinc-500">Original Post (Skepticism)</td>
+                      <td className="px-4 py-4 text-sm font-medium text-zinc-700">“Is Foodieclub actually legit? 50% off seems too good to be true.”</td>
+                      <td className="px-4 py-4 whitespace-nowrap">
+                        <span className="inline-flex items-center rounded-lg bg-zinc-100 px-2.5 py-1 text-[10px] font-bold uppercase tracking-wider text-zinc-600">Initial user doubt</span>
+                      </td>
+                    </tr>
+                    <tr className="bg-zinc-50/50 rounded-xl overflow-hidden border-l-2 border-[#2563eb]">
+                      <td className="px-4 py-4 whitespace-nowrap text-xs font-bold text-[#2563eb]">Reply (User Experience)</td>
+                      <td className="px-4 py-4 text-sm font-medium text-zinc-700">“Actually been using Foodieclub for about 4 months now. It’s legit - got decent discounts at places like dumpling home.”</td>
+                      <td className="px-4 py-4 whitespace-nowrap">
+                        <span className="inline-flex items-center rounded-lg bg-emerald-50 px-2.5 py-1 text-[10px] font-bold uppercase tracking-wider text-emerald-700">Real user validation</span>
+                      </td>
+                    </tr>
+                    <tr className="bg-zinc-50/50 rounded-xl overflow-hidden">
+                      <td className="px-4 py-4 whitespace-nowrap text-xs font-bold text-[#2563eb]">Reply (Explanation)</td>
+                      <td className="px-4 py-4 text-sm font-medium text-zinc-700">“The discount model works because restaurants use us to fill tables during quieter periods. The savings are real.”</td>
+                      <td className="px-4 py-4 whitespace-nowrap">
+                        <span className="inline-flex items-center rounded-lg bg-blue-50 px-2.5 py-1 text-[10px] font-bold uppercase tracking-wider text-blue-700">Clear product understanding</span>
+                      </td>
+                    </tr>
+                    <tr className="bg-zinc-900 rounded-xl overflow-hidden shadow-lg">
+                      <td className="px-4 py-4 whitespace-nowrap text-xs font-bold text-white">Outcome</td>
+                      <td className="px-4 py-4 text-sm font-bold text-white">Conversation shifts from 'is this legit?' to 'how does it work?'</td>
+                      <td className="px-4 py-4 whitespace-nowrap">
+                        <span className="inline-flex items-center rounded-lg bg-[#2563eb] px-2.5 py-1 text-[10px] font-bold uppercase tracking-wider text-white">Curiosity replaces skepticism</span>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+
+            <div className="mt-6 sm:mt-8 rounded-2xl bg-[#2563eb]/[0.08] p-5 sm:p-6 shadow-[inset_0_1px_0_rgba(255,255,255,0.4)]">
+              <div className="flex items-center gap-2 mb-2">
+                <div className="h-1 w-1 sm:h-1.5 sm:w-1.5 rounded-full bg-[#2563eb]" />
+                <span className="text-[9px] sm:text-[10px] font-bold uppercase tracking-[0.2em] text-[#2563eb]">Momentum</span>
+              </div>
+              <p className="text-sm sm:text-[15px] leading-relaxed text-zinc-900 font-bold tracking-tight">
+                Users are no longer just questioning legitimacy. They are seeing real usage and clear explanations of how the product works.
+              </p>
+            </div>
+          </section>
         </div>
 
         {/* Conclusion Section */}
