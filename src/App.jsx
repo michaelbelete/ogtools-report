@@ -25,7 +25,7 @@ export default function Dashboard() {
 
   return (
     <div className="min-h-screen bg-[#F8FAFC] font-sans text-zinc-900 antialiased selection:bg-[#2563eb]/10 selection:text-[#2563eb]">
-      <div className="relative px-4 sm:px-6 py-8 sm:py-16 mx-auto max-w-7xl lg:py-24">
+      <div className="relative px-4 py-8 mx-auto sm:px-6 sm:py-16 max-w-7xl lg:py-24">
         
         {/* Header */}
         <header className={styles.surface + " mb-6 sm:mb-10 p-6 sm:p-10 md:p-14 overflow-hidden"}>
@@ -34,31 +34,30 @@ export default function Dashboard() {
           
           <div className="relative z-10 grid gap-10 lg:grid-cols-[1fr_420px] lg:items-center">
             <div className="max-w-2xl">
-              <div className="flex items-center gap-4 sm:gap-5 mb-6 sm:mb-10">
-                <div className="flex h-10 w-10 sm:h-12 sm:w-12 flex-shrink-0 items-center justify-center rounded-xl sm:rounded-2xl bg-[#2563eb] text-white shadow-[0_8px_20px_-4px_rgba(37,99,235,0.4)]">
+              <div className="flex items-center gap-4 mb-6 sm:gap-5 sm:mb-10">
+                <div className="flex h-10 w-10 sm:h-8 sm:w-8 flex-shrink-0 items-center justify-center rounded-xl sm:rounded-full bg-[#2563eb] text-white shadow-[0_8px_20px_-4px_rgba(37,99,235,0.4)]">
                   <div className="h-2 w-2 sm:h-2.5 sm:w-2.5 rounded-full bg-white shadow-sm" />
                 </div>
                 <div className="flex items-center gap-3 sm:gap-4">
                   <p className="text-[10px] sm:text-sm font-bold tracking-[0.15em] sm:tracking-widest uppercase text-zinc-900">Momentum Report</p>
-                  <div className="hidden h-px w-12 sm:w-16 bg-[#2563eb]/20 sm:block" />
                 </div>
               </div>
 
               <h1 className="text-3xl xs:text-4xl sm:text-5xl md:text-6xl lg:text-[4.5rem] font-bold tracking-tight text-zinc-900 leading-[1.1] sm:leading-[1]">
-                FoodieClub Pilot <span className="text-zinc-200 font-light hidden sm:inline">|</span><span className="sm:hidden text-zinc-300">|</span> Week 1
+                FoodieClub Pilot <span className="text-[#2563eb]">Week 1</span>
               </h1>
             </div>
 
             <div className="grid gap-4 sm:gap-5">
               <div className="rounded-[20px] sm:rounded-[24px] bg-gradient-to-br from-zinc-900 to-zinc-800 p-6 sm:p-8 text-white shadow-xl">
-                <p className="text-lg sm:text-xl font-medium leading-snug tracking-tight">
+                <p className="text-lg font-medium leading-snug tracking-tight sm:text-xl">
                   We are starting to break the skepticism that was blocking
                   signups.
                 </p>
               </div>
 
               <div className="rounded-[20px] sm:rounded-[24px] bg-gradient-to-br from-[#2563eb]/[0.08] to-transparent p-6 sm:p-8">
-                <p className="text-sm sm:text-base font-medium leading-relaxed text-zinc-700">
+                <p className="text-sm font-medium leading-relaxed sm:text-base text-zinc-700">
                   The conversation is already shifting from doubt to curiosity.
                 </p>
               </div>
@@ -67,7 +66,7 @@ export default function Dashboard() {
         </header>
 
         {/* Metrics Grid */}
-        <div className="grid gap-6 sm:gap-8 mb-8 sm:mb-10 xl:grid-cols-3">
+        <div className="grid gap-6 mb-8 sm:gap-8 sm:mb-10 xl:grid-cols-3">
           
           {/* Card 1 */}
           <section className={styles.metricCard}>
@@ -117,11 +116,11 @@ export default function Dashboard() {
             <div className="grid flex-1 gap-4 sm:gap-5">
               <div className={styles.beforePanel}>
                 <p className={styles.beforeLabel}>Before (Doubt)</p>
-                <div className="mt-3 sm:mt-4 space-y-2 sm:space-y-3">
-                  <p className="text-lg sm:text-xl italic font-medium text-zinc-500">
+                <div className="mt-3 space-y-2 sm:mt-4 sm:space-y-3">
+                  <p className="text-lg italic font-medium sm:text-xl text-zinc-500">
                     “Is this legit?”
                   </p>
-                  <p className="text-lg sm:text-xl italic font-medium text-zinc-500">
+                  <p className="text-lg italic font-medium sm:text-xl text-zinc-500">
                     “Sounds like a scam”
                   </p>
                 </div>
@@ -129,11 +128,11 @@ export default function Dashboard() {
 
               <div className={styles.nowPanel}>
                 <p className={styles.nowLabel}>Now (Curiosity)</p>
-                <div className="mt-3 sm:mt-4 space-y-2 sm:space-y-3">
-                  <p className="text-lg sm:text-xl font-semibold tracking-tight text-zinc-900">
+                <div className="mt-3 space-y-2 sm:mt-4 sm:space-y-3">
+                  <p className="text-lg font-semibold tracking-tight sm:text-xl text-zinc-900">
                     “How do the off hours deals work?”
                   </p>
-                  <p className="text-lg sm:text-xl font-semibold tracking-tight text-zinc-900">
+                  <p className="text-lg font-semibold tracking-tight sm:text-xl text-zinc-900">
                     “Has anyone tried it?”
                   </p>
                 </div>
@@ -156,8 +155,8 @@ export default function Dashboard() {
 
               <div className={styles.nowPanel}>
                 <p className={styles.nowLabel}>Now</p>
-                <div className="flex items-center gap-2 sm:gap-4 mt-3 sm:mt-4 leading-none">
-                  <span className="text-3xl sm:text-4xl font-bold tracking-tight text-zinc-900 leading-none">
+                <div className="flex items-center gap-2 mt-3 leading-none sm:gap-4 sm:mt-4">
+                  <span className="text-3xl font-bold leading-none tracking-tight sm:text-4xl text-zinc-900">
                     Mixed
                   </span>
                   <span className="text-[#2563eb] text-xl sm:text-2xl font-light leading-none -mt-1">→</span>
@@ -188,11 +187,11 @@ export default function Dashboard() {
 
             <div className="mb-8 space-y-1.5">
               <p className={styles.nowLabel}>Reddit Thread (r/san_francisco)</p>
-              <h4 className="text-xl sm:text-2xl font-bold tracking-tight text-zinc-900">“Is Foodieclub actually legit?”</h4>
+              <h4 className="text-xl font-bold tracking-tight sm:text-2xl text-zinc-900">“Is Foodieclub actually legit?”</h4>
             </div>
 
-            <div className="overflow-x-auto -mx-6 sm:mx-0">
-              <div className="inline-block min-w-full align-middle px-6 sm:px-0">
+            <div className="-mx-6 overflow-x-auto sm:mx-0">
+              <div className="inline-block min-w-full px-6 align-middle sm:px-0">
                 <table className="min-w-full border-separate border-spacing-y-2">
                   <thead>
                     <tr>
@@ -202,8 +201,8 @@ export default function Dashboard() {
                     </tr>
                   </thead>
                   <tbody>
-                    <tr className="bg-zinc-50/50 rounded-xl overflow-hidden">
-                      <td className="px-4 py-4 whitespace-nowrap text-xs font-bold text-zinc-500">Original Post (Skepticism)</td>
+                    <tr className="overflow-hidden bg-zinc-50/50 rounded-xl">
+                      <td className="px-4 py-4 text-xs font-bold whitespace-nowrap text-zinc-500">Original Post (Skepticism)</td>
                       <td className="px-4 py-4 text-sm font-medium text-zinc-700">“Is Foodieclub actually legit? 50% off seems too good to be true.”</td>
                       <td className="px-4 py-4 whitespace-nowrap">
                         <span className="inline-flex items-center rounded-lg bg-zinc-100 px-2.5 py-1 text-[10px] font-bold uppercase tracking-wider text-zinc-600">Initial user doubt</span>
@@ -216,15 +215,15 @@ export default function Dashboard() {
                         <span className="inline-flex items-center rounded-lg bg-emerald-50 px-2.5 py-1 text-[10px] font-bold uppercase tracking-wider text-emerald-700">Real user validation</span>
                       </td>
                     </tr>
-                    <tr className="bg-zinc-50/50 rounded-xl overflow-hidden">
+                    <tr className="overflow-hidden bg-zinc-50/50 rounded-xl">
                       <td className="px-4 py-4 whitespace-nowrap text-xs font-bold text-[#2563eb]">Reply (Explanation)</td>
                       <td className="px-4 py-4 text-sm font-medium text-zinc-700">“The discount model works because restaurants use us to fill tables during quieter periods. The savings are real.”</td>
                       <td className="px-4 py-4 whitespace-nowrap">
                         <span className="inline-flex items-center rounded-lg bg-blue-50 px-2.5 py-1 text-[10px] font-bold uppercase tracking-wider text-blue-700">Clear product understanding</span>
                       </td>
                     </tr>
-                    <tr className="bg-zinc-900 rounded-xl overflow-hidden shadow-lg">
-                      <td className="px-4 py-4 whitespace-nowrap text-xs font-bold text-white">Outcome</td>
+                    <tr className="overflow-hidden shadow-lg bg-zinc-900 rounded-xl">
+                      <td className="px-4 py-4 text-xs font-bold text-white whitespace-nowrap">Outcome</td>
                       <td className="px-4 py-4 text-sm font-bold text-white">Conversation shifts from 'is this legit?' to 'how does it work?'</td>
                       <td className="px-4 py-4 whitespace-nowrap">
                         <span className="inline-flex items-center rounded-lg bg-[#2563eb] px-2.5 py-1 text-[10px] font-bold uppercase tracking-wider text-white">Curiosity replaces skepticism</span>
@@ -260,7 +259,7 @@ export default function Dashboard() {
                 <p className="text-2xl xs:text-3xl sm:text-4xl md:text-5xl lg:text-[3.5rem] font-bold tracking-tight text-white leading-[1.2] sm:leading-[1.1]">
                   Users no longer hit a wall of skepticism when they search.
                 </p>
-                <p className="text-lg sm:text-2xl font-light text-zinc-500 md:text-3xl">
+                <p className="text-lg font-light sm:text-2xl text-zinc-500 md:text-3xl">
                   They now see clear explanations of how the product works.
                 </p>
               </div>
@@ -268,13 +267,13 @@ export default function Dashboard() {
 
             <div className="grid gap-4 sm:gap-6">
               <div className="rounded-[24px] sm:rounded-3xl bg-[#2563eb]/10 p-6 sm:p-10 border border-[#2563eb]/20 shadow-[0_4px_20px_-4px_rgba(37,99,235,0.2)]">
-                <p className="text-sm sm:text-base font-medium leading-relaxed text-blue-100">
+                <p className="text-sm font-medium leading-relaxed text-blue-100 sm:text-base">
                   This reduces friction and makes users more likely to download.
                 </p>
               </div>
 
               <div className="rounded-[24px] sm:rounded-3xl bg-gradient-to-br from-[#2563eb] to-[#1e40af] p-6 sm:p-10 shadow-[0_20px_40px_-10px_rgba(37,99,235,0.4)] ring-1 ring-white/20">
-                <p className="text-sm sm:text-base font-bold leading-relaxed text-white">
+                <p className="text-sm font-bold leading-relaxed text-white sm:text-base">
                   By influencing what users see when they search, we are
                   creating a clear path to conversion.
                 </p>
@@ -284,7 +283,7 @@ export default function Dashboard() {
         </section>
 
         {/* Footer */}
-        <footer className="flex flex-col items-start justify-between gap-6 sm:gap-8 px-2 mt-12 sm:mt-16 md:flex-row md:items-center">
+        <footer className="flex flex-col items-start justify-between gap-6 px-2 mt-12 sm:gap-8 sm:mt-16 md:flex-row md:items-center">
           <div className="flex items-center gap-3 rounded-2xl bg-white px-4 sm:px-5 py-2 sm:py-2.5 shadow-sm">
             <div className="h-1.5 w-1.5 sm:h-2 sm:w-2 rounded-full bg-[#2563eb] animate-pulse" />
             <span className="text-[10px] sm:text-[11px] font-bold uppercase tracking-widest text-zinc-900">
